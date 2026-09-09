@@ -110,7 +110,7 @@ nav a:hover {
             rgba(0,0,0,0.65),
             rgba(0,0,0,0.3)
         ),
-        url("images/salon.jpg");
+        url("image/salon.jpg");
 
     background-size: cover;
     background-position: center;
@@ -426,9 +426,19 @@ footer p {
     .navbar {
         padding: 0 5%;
     }
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    overflow-x: auto;
+    padding-top: 10px;
+}
 
-    nav {
-        display: none;
+nav a {
+    font-size: 12px;
+    white-space: nowrap;
+}
     }
 
     .service-container {
@@ -448,9 +458,11 @@ footer p {
 @media (max-width: 600px) {
 
     .navbar {
-        height: 70px;
-    }
-
+    height: auto;
+    min-height: 70px;
+    padding: 12px 5%;
+    flex-wrap: wrap;
+}
     .logo {
         font-size: 20px;
     }
