@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel | Unique Salons</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            UNIQUE <span>SALONS</span>
+        </div>
+
+       <div class="admin-buttons">
+
+    <a href="index.html" class="book-btn">
+        Back to Website
+    </a>
+
+    <button onclick="logoutAdmin()" class="logout-btn">
+        Logout
+    </button>
+
+</div>
+    </header>
+
+
+    <!-- ADMIN PANEL -->
+    <section class="admin-section">
+
+        <p class="section-small">ADMIN PANEL</p>
+
+        <h1>Appointment Management</h1>
+
+        <p class="admin-subtitle">
+            Manage customer appointments and assign barbers.
+        </p>
+
+
+
+        <!-- APPOINTMENTS -->
+        <div class="appointments">
+
+            <h2>Customer Appointments</h2>
+
+            <div id="appointmentsList"></div>
+
+        </div>
+
+    </section>
+
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
