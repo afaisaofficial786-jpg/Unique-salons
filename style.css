@@ -17,8 +17,8 @@ body {
 /* ================= NAVBAR ================= */
 
 .navbar {
-    height: 80px;
-    padding: 0 7%;
+    min-height: 80px;
+    padding: 12px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,7 +110,7 @@ nav a:hover {
             rgba(0,0,0,0.65),
             rgba(0,0,0,0.3)
         ),
-        url("image/salon.jpg");
+        url("salon.jpg");
 
     background-size: cover;
     background-position: center;
@@ -256,7 +256,7 @@ section h2 {
     overflow: hidden;
 }
 
- .gallery-item img {
+.gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -295,8 +295,6 @@ section h2 {
 .hours-box span {
     color: #e50914;
 }
-
-/* ================= BOOKING ================= */
 
 /* ================= BOOKING ================= */
 
@@ -348,7 +346,6 @@ section h2 {
 #bookingForm input,
 #bookingForm select {
     width: 100%;
-    box-sizing: border-box;
     padding: 14px;
     background: #050505;
     color: white;
@@ -419,106 +416,7 @@ footer p {
     font-size: 13px;
 }
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 900px) {
-
-    .navbar {
-        padding: 0 5%;
-    }
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 14px;
-    overflow-x: auto;
-    padding-top: 10px;
-}
-
-nav a {
-    font-size: 12px;
-    white-space: nowrap;
-}
-    }
-
-    .service-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-container {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .navbar {
-    height: auto;
-    min-height: 70px;
-    padding: 12px 5%;
-    flex-wrap: wrap;
-}
-    .logo {
-        font-size: 20px;
-    }
-
-    .book-btn {
-        padding: 10px 12px;
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: 650px;
-        padding: 60px 6%;
-    }
-
-    .hero h1 {
-        font-size: 65px;
-    }
-
-    .hero-text {
-        font-size: 16px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    section {
-        padding: 70px 6%;
-    }
-
-    section h2 {
-        font-size: 38px;
-    }
-
-    .service-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-image img {
-        height: 350px;
-    }
-
-    .gallery-item {
-        height: 280px;
-    }
-
-    .hours-box p {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-}
-/* =========================
-   ADMIN PANEL
-========================= */
+/* ================= ADMIN PANEL ================= */
 
 .admin-section {
     min-height: 100vh;
@@ -658,33 +556,7 @@ nav a {
     color: #999;
 }
 
-
-/* =========================
-   ADMIN MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .admin-section {
-        padding: 60px 6%;
-    }
-
-    .admin-section h1 {
-        font-size: 36px;
-    }
-
-    .appointment-card {
-        flex-direction: column;
-    }
-
-    .appointment-actions {
-        width: 100%;
-    }
-
-}
-/* =========================
-   ADMIN LOGIN
-========================= */
+/* ================= ADMIN LOGIN ================= */
 
 .admin-login {
     min-height: 100vh;
@@ -782,9 +654,8 @@ nav a {
 .back-home:hover {
     color: white;
 }
-/* =========================
-   ADMIN BUTTONS
-========================= */
+
+/* ================= ADMIN BUTTONS ================= */
 
 .admin-buttons {
     display: flex;
@@ -806,96 +677,13 @@ nav a {
     background: #e50914;
     border-color: #e50914;
 }
-/* =========================
-   PRICE LIST
-========================= */
 
-.price-list {
-    background: #111111;
-    text-align: center;
-}
-
-.price-list h2 {
-    margin-bottom: 45px;
-}
-
-.price-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-.price-card {
-    background: #181818;
-    border: 1px solid #292929;
-    border-radius: 8px;
-    padding: 30px;
-    text-align: left;
-    transition: 0.3s;
-}
-
-.price-card:hover {
-    border-color: #e50914;
-    transform: translateY(-5px);
-}
-
-.price-card h3 {
-    color: #e50914;
-    font-size: 25px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #333;
-}
-
-.price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 13px 0;
-    border-bottom: 1px solid #292929;
-}
-
-.price-row:last-child {
-    border-bottom: none;
-}
-
-.price-row span {
-    color: #cccccc;
-}
-
-.price-row strong {
-    color: white;
-    white-space: nowrap;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    .price-container {
-        grid-template-columns: 1fr;
-    }
-
-    .price-card {
-        padding: 25px 20px;
-    }
-
-    .price-card h3 {
-        font-size: 22px;
-    }
-
-}
-/* =========================
-   PRICE LIST - 2 x 2 GRID
-========================= */
+/* ================= PRICE LIST ================= */
 
 .price-list {
     padding: 80px 5%;
     background: #111;
+    text-align: center;
 }
 
 .price-list-title {
@@ -908,6 +696,7 @@ nav a {
     margin-top: 10px;
 }
 
+.price-container,
 .price-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -921,6 +710,13 @@ nav a {
     border: 1px solid #333;
     border-radius: 12px;
     padding: 25px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    border-color: #e50914;
+    transform: translateY(-5px);
 }
 
 .price-card h3 {
@@ -935,6 +731,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 12px 0;
     border-bottom: 1px solid #292929;
 }
@@ -951,12 +748,75 @@ nav a {
 .price-row strong {
     color: #fff;
     font-size: 17px;
+    white-space: nowrap;
 }
 
+/* ================= GOOGLE PAY BUTTON ================= */
 
-/* MOBILE */
+.gpay-official-style {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    min-height: 48px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gpay-official-style:hover {
+    transform: scale(1.02);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 12px 5%;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 14px;
+        overflow-x: auto;
+        padding-top: 10px;
+        order: 3;
+    }
+
+    nav a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 @media (max-width: 768px) {
 
+    .price-container,
     .price-grid {
         grid-template-columns: 1fr;
     }
@@ -966,37 +826,100 @@ nav a {
     }
 
 }
-/* =========================
-   GOOGLE PAY BUTTON
-========================= */
 
-.gpay-official-style {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 700px) {
 
-    min-width: 180px;
-    min-height: 48px;
+    .admin-section {
+        padding: 60px 6%;
+    }
 
-    padding: 12px 24px;
+    .admin-section h1 {
+        font-size: 36px;
+    }
 
-    background: #fff;
-    color: #000;
+    .appointment-card {
+        flex-direction: column;
+    }
 
-    border-radius: 6px;
+    .appointment-actions {
+        width: 100%;
+    }
 
-    text-decoration: none;
-
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-
-    margin-top: 15px;
-
-    cursor: pointer;
-    transition: transform 0.2s ease;
 }
 
-.gpay-official-style:hover {
-    transform: scale(1.02);
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 12px 5%;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .book-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 650px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section {
+        padding: 70px 6%;
+    }
+
+    section h2 {
+        font-size: 38px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .gallery-item {
+        height: 280px;
+    }
+
+    .hours-box p {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #bookingForm {
+        padding: 25px;
+    }
+
 }
