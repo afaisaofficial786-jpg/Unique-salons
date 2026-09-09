@@ -117,10 +117,14 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.hero-content {
-    max-width: 650px;
+.hero {
+    min-height: 650px;
+    padding: 60px 6%;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #080808;
 }
-
 .small-title,
 .section-small {
     color: #e50914;
